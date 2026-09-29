@@ -6,6 +6,7 @@ dist
 target
 .idea
 *.iml
+.jqwik-database
 
 # Workshop material and tooling
 game_pdfs/
