@@ -1,0 +1,19 @@
+{
+  "name": "slidev-theme-codecentric",
+  "private": true,
+  "type": "module",
+  "keywords": [
+    "slidev-theme",
+    "slidev"
+  ],
+  "//": "Vendored from gitlab.codecentric.de:marco.emrich/slidev-theme-codecentric (86448f3)",
+  "slidev": {
+    "colorSchema": "light",
+    "defaults": {
+      "fonts": {
+        "sans": "Rubik,Roboto",
+        "mono": "Fira Code"
+      }
+    }
+  }
+}

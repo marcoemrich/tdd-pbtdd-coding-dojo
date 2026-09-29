@@ -1,0 +1,11 @@
+
+:root {
+  /* default theme color */
+  /* can be overrided by uses `themeConfig` option */
+  --slidev-theme-primary: #22F4AE;
+  --slidev-theme-mint: #47D9CB;
+  --slidev-theme-blue: #00C9EC;
+  --slidev-theme-yellow: #F7EA2D;
+  --slidev-theme-red: #FF5A5F;
+}
+
