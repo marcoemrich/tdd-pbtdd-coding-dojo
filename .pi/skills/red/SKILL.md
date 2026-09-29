@@ -13,12 +13,12 @@ description: Run only the Red phase of one Predictive TDD cycle — activate exa
 
 ## What to read
 
-1. `.claude/skills/predictive-tdd/SKILL.md` — sections **Core rules**,
+1. `.pi/skills/predictive-tdd/SKILL.md` — sections **Core rules**,
    **1. Activate one behavior** and **2. Reach behavioral Red**. Those are
    binding as written.
-2. The matching profile under `.claude/skills/predictive-tdd/stacks/` for
+2. The matching profile under `.pi/skills/predictive-tdd/stacks/` for
    inactive-test syntax and the commands to run.
-3. `.claude/skills/exact-coding-shared/human-in-the-loop.md` for the Red checkpoint and the prediction-mismatch rule.
+3. `.pi/skills/exact-coding-shared/human-in-the-loop.md` for the Red checkpoint and the prediction-mismatch rule.
 
 If no ordered test list exists yet, say so and offer `test-list` first. Do not
 invent a list as a side effect of this phase.
@@ -34,7 +34,7 @@ Execute exactly those two steps of the cycle, then stop:
 
 ## Where to stop
 
-Stop at the Red checkpoint from `.claude/skills/exact-coding-shared/human-in-the-loop.md` and report the active behavior, the
+Stop at the Red checkpoint from `.pi/skills/exact-coding-shared/human-in-the-loop.md` and report the active behavior, the
 prediction, the actual result, and why this failure is the intended behavioral
 Red. Do not write production behavior, and do not continue into Green — even
 when the Autonomy Level would not stop there. The human invoked a single phase;
