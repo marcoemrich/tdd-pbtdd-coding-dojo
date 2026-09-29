@@ -32,6 +32,9 @@ if [ -e package.json ] || [ -e pom.xml ]; then
   exit 1
 fi
 
+echo "==> checking prerequisites for $STACK"
+"$TEMPLATES/$STACK/check.sh"
+
 echo "==> installing $STACK"
 cp -R "$TEMPLATES/$STACK/files/." .
 "$TEMPLATES/$STACK/install.sh"
