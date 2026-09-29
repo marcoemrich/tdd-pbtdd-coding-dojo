@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-- Node.js v20 or higher (`node --version`)
+- Node.js v22.12 or higher (`node --version`); Vitest 5 does not run on Node 20
 - npm
 
 ## Install

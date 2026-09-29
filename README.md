@@ -34,7 +34,7 @@ works for every language. Pick your stack and run setup once after cloning:
 
 | Stack                | Command                        | Requires                              |
 | -------------------- | ------------------------------ | ------------------------------------- |
-| TypeScript + Vitest  | `./setup.sh typescript-vitest` | Node.js 20 or higher                  |
+| TypeScript + Vitest  | `./setup.sh typescript-vitest` | Node.js 22.12 or higher               |
 | Java + JUnit + Maven | `./setup.sh java-junit-maven`  | JDK 17 or higher, Maven 3.9 or higher |
 
 Setup copies the skeleton from `templates/<stack>/` into the repository root,
@@ -123,7 +123,7 @@ For the TypeScript stack:
 
 ```bash
 node --version
-# Expected: v20 or higher (e.g. v24.9.0)
+# Expected: v22.12 or higher (e.g. v24.9.0)
 ```
 
 **2. Claude Code installed and API key configured?**
