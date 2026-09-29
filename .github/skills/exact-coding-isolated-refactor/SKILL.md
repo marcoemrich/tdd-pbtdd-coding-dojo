@@ -11,10 +11,10 @@ Refactoring uses the Four Rules of Simple Design in an isolated subagent. Refact
 
 ## Preparation
 
-1. Read `.claude/skills/test-list/SKILL.md`.
-2. Read `.claude/skills/predictive-tdd/SKILL.md`.
+1. Read `.github/skills/test-list/SKILL.md`.
+2. Read `.github/skills/predictive-tdd/SKILL.md`.
 3. Determine the project's language and test framework. Read the matching file
-   under `.claude/skills/predictive-tdd/stacks/` before changing code.
+   under `.github/skills/predictive-tdd/stacks/` before changing code.
 4. Read the complete specification and establish the applicable baseline gates.
 
 Do not assume TypeScript or Vitest from this orchestration file. Concrete
@@ -25,14 +25,14 @@ tools belong only to the selected stack profile.
 
 1. Create the complete ordered test list with every future behavior inactive,
    then predict and verify that the inactive list leaves the full suite green.
-2. Apply the Test-List checkpoint from `.claude/skills/exact-coding-shared/human-in-the-loop.md`.
+2. Apply the Test-List checkpoint from `.github/skills/exact-coding-shared/human-in-the-loop.md`.
 3. For exactly one behavior at a time, follow the Predictive TDD skill:
    - activate one behavior and reach behavioral Red,
    - state falsifiable predictions before deterministic checks and compare them
      explicitly with reality,
    - apply the Red checkpoint,
    - reach Green with the smallest production change,
-   - after every Green, delegate the Four Rules review through the Agent tool with `subagent_type: refactor`; invoke it even when Green changed no production code,
+   - after every Green, delegate the Four Rules review through the `refactor` custom agent; invoke it even when Green changed no production code,
    - perform the mandatory domain-boundary trial and retain or narrowly undo it based on semantic and test evidence,
    - apply the Refactor checkpoint.
 4. Continue until every listed behavior is executable and all applicable gates
@@ -52,7 +52,7 @@ The subagent never manages checkpoints or waits for the user. The main context r
 
 ## Human-in-the-loop
 
-`.claude/skills/exact-coding-shared/human-in-the-loop.md` is the single source of truth for checkpoints. Its default
+`.github/skills/exact-coding-shared/human-in-the-loop.md` is the single source of truth for checkpoints. Its default
 `full-hitl` level stops after Test List, Red, and Refactor, and whenever a
 prediction is wrong. Green has no default stop.
 

@@ -13,10 +13,10 @@ subagent.
 
 ## Preparation
 
-1. Read `.claude/skills/test-list/SKILL.md`.
-2. Read `.claude/skills/predictive-tdd/SKILL.md`.
+1. Read `.github/skills/test-list/SKILL.md`.
+2. Read `.github/skills/predictive-tdd/SKILL.md`.
 3. Determine the project's language and test framework. Read the matching file
-   under `.claude/skills/predictive-tdd/stacks/` before changing code.
+   under `.github/skills/predictive-tdd/stacks/` before changing code.
 4. Read the complete specification and establish the applicable baseline gates.
 
 Do not assume TypeScript or Vitest from this orchestration file. Concrete
@@ -27,7 +27,7 @@ tools belong only to the selected stack profile.
 
 1. Create the complete ordered test list with every future behavior inactive,
    then predict and verify that the inactive list leaves the full suite green.
-2. Apply the Test-List checkpoint from `.claude/skills/exact-coding-shared/human-in-the-loop.md`.
+2. Apply the Test-List checkpoint from `.github/skills/exact-coding-shared/human-in-the-loop.md`.
 3. For exactly one behavior at a time, follow the Predictive TDD skill:
    - activate one behavior and reach behavioral Red,
    - state falsifiable predictions before deterministic checks and compare them
@@ -52,7 +52,7 @@ before continuing.
 
 ## Human-in-the-loop
 
-`.claude/skills/exact-coding-shared/human-in-the-loop.md` is the single source of truth for checkpoints. Its default
+`.github/skills/exact-coding-shared/human-in-the-loop.md` is the single source of truth for checkpoints. Its default
 `full-hitl` level stops after Test List, Red, and Refactor, and whenever a
 prediction is wrong. Green has no default stop.
 

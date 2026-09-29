@@ -16,13 +16,13 @@ description: Run only the Refactor phase of one Predictive TDD cycle — review 
 
 ## What to read
 
-1. `.claude/skills/predictive-tdd/SKILL.md` — section **4. Inspect and
+1. `.github/skills/predictive-tdd/SKILL.md` — section **4. Inspect and
    refactor**, including **Domain responsibility review** and the **Mandatory
    domain-boundary trial**. That section is binding as written, with its
    before/after records.
-2. The matching profile under `.claude/skills/predictive-tdd/stacks/` for
+2. The matching profile under `.github/skills/predictive-tdd/stacks/` for
    language- and framework-specific application guidance only.
-3. `.claude/skills/exact-coding-shared/human-in-the-loop.md` for the Refactor checkpoint and the prediction-mismatch rule.
+3. `.github/skills/exact-coding-shared/human-in-the-loop.md` for the Refactor checkpoint and the prediction-mismatch rule.
 
 ## What to do
 
@@ -40,11 +40,11 @@ it on the evidence.
 Make at most one refactoring at a time and predict and run the smallest relevant
 check after each.
 
-Both refactor profiles ship in this tree. If the human named the isolated profile, delegate the review through the Agent tool with `subagent_type: refactor` and verify Green before applying the checkpoint yourself; otherwise refactor inline in this context.
+Both refactor profiles ship in this tree. If the human named the isolated profile, delegate the review through the `refactor` custom agent and verify Green before applying the checkpoint yourself; otherwise refactor inline in this context.
 
 ## Where to stop
 
-Stop at the Refactor checkpoint from `.claude/skills/exact-coding-shared/human-in-the-loop.md` — including when no change improved
+Stop at the Refactor checkpoint from `.github/skills/exact-coding-shared/human-in-the-loop.md` — including when no change improved
 the code. Report the Four Rules decision, the boundary record, any change made,
 and the passing gates. Do not close the cycle by activating the next behavior —
 the human invoked a single phase; that invocation is the checkpoint, and they
