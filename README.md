@@ -46,6 +46,9 @@ Run setup **before** the workshop. It is the step most likely to run into a
 proxy, a missing toolchain or a slow network, and those are expensive to debug
 in the room.
 
+In Claude Code you can also run `/setup Java` or `/setup TypeScript`: the
+`setup` skill runs `./setup.sh` for that stack.
+
 Setup refuses to run when a project is already present, so it will not
 overwrite work you have already done. To start over, use a fresh clone.
 
