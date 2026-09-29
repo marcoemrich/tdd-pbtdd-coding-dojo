@@ -13,11 +13,11 @@ description: Run only the Green phase of one Predictive TDD cycle — make the s
 
 ## What to read
 
-1. `.claude/skills/predictive-tdd/SKILL.md` — sections **Core rules** and
+1. `.opencode/skills/predictive-tdd/SKILL.md` — sections **Core rules** and
    **3. Reach Green minimally**. Those are binding as written.
-2. The matching profile under `.claude/skills/predictive-tdd/stacks/` for the
+2. The matching profile under `.opencode/skills/predictive-tdd/stacks/` for the
    commands to run.
-3. `.claude/skills/exact-coding-shared/human-in-the-loop.md` for the prediction-mismatch rule.
+3. `.opencode/skills/exact-coding-shared/human-in-the-loop.md` for the prediction-mismatch rule.
 
 ## What to do
 
@@ -38,7 +38,7 @@ Then execute exactly step 3 of the cycle:
 
 Stop after the active test is green. Report the change, the prediction, and the
 actual result. Do not refactor, and do not start the next behavior — even
-though Green has no default checkpoint in `.claude/skills/exact-coding-shared/human-in-the-loop.md`. The human invoked a single
+though Green has no default checkpoint in `.opencode/skills/exact-coding-shared/human-in-the-loop.md`. The human invoked a single
 phase; that invocation is the checkpoint.
 
 On a prediction mismatch, follow **Prediction mismatch** in the Predictive TDD
